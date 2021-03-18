@@ -2,6 +2,7 @@ name: Update pagespeed results
 on:
   schedule:
     - cron:  '0 11 * * 5'
+  workflow_dispatch:
 
 jobs:
   getresults:
