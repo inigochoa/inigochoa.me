@@ -2,7 +2,10 @@
 
 ## Overview
 
-inigochoa.me source code. Compiled with Eleventy and styled with Tailwind CSS.
+inigochoa.me source code. With a clean and simple design made with Tailwind CSS,
+it compiles into a fast web page thanks to Eleventy.
+
+![Pagespeed score](./img/pagespeed.svg)
 
 ### Setup
 
