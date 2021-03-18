@@ -48,7 +48,7 @@
     "dev:twnd": "postcss src/_assets/css/tailwind.pcss -o _site/assets/css/style.css --watch",
     "git:authors": "echo '# Authors\n' > AUTHORS.md && git log --raw | grep '^Author: ' | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' >> AUTHORS.md",
     "lint": "npm-run-all --parallel lint:* --print-label",
-    "lint:js": "eslint src/**/*.js",
+    "lint:js": "eslint lib src",
     "lint:md": "markdownlint-cli2 '**/*.md' '#node_modules'",
     "prod": "npm-run-all clean lint --parallel prod:* --print-label",
     "prod:11ty": "NODE_ENV=production eleventy --quiet",
