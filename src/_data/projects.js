@@ -1,0 +1,20 @@
+module.exports = [
+  {
+    desc: 'My personal portfolio. Designed with Tailwind CSS, written in Markdown, and generated with Eleventy.',
+    lang: ['JavaScript', 'CSS', 'Markdown', 'Nunjucks'],
+    link: 'https://github.com/inigochoa/inigochoa.me',
+    name: 'inigochoa.me',
+  },
+  {
+    desc: 'A private Telegram bot for web page monitoring. Add a list of URLs and be notified when their status changes.',
+    lang: ['JavaScript'],
+    link: 'https://github.com/inigochoa/monitorbot',
+    name: 'monitorbot',
+  },
+  {
+    desc: 'An utility library to configure a Service Worker for your website. Includes cache management, link prefetch, offline mode and content deferr.',
+    lang: ['JavaScript'],
+    link: 'https://github.com/veiss-com/sw-tools',
+    name: 'veiss-com/sw-tools',
+  },
+]

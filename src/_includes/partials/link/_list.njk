@@ -1,0 +1,13 @@
+{% if linkCollection %}
+  <ol class="flex flex-wrap justify-center nav-links">
+    {% for item in linkCollection %}
+      {% set classes = '' %}
+
+      {% if item.url == page.url %}
+        {% set classes = 'font-semibold' %}
+      {% endif %}
+
+      {% include 'partials/link/_list_item.njk' %}
+    {% endfor %}
+  </ol>
+{% endif %}
