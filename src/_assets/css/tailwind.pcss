@@ -1,0 +1,35 @@
+@tailwind base;
+
+@tailwind components;
+
+a {
+  &:active,
+  &:focus,
+  &:hover {
+    @apply text-garnet;
+  }
+}
+
+.language {
+  &::before {
+    background-color: var(--lang-color);
+    content: '';
+    @apply h-3 inline-block mr-2 rounded-full w-3;
+  }
+}
+
+.nav-links li + li::before {
+  content: '·';
+  margin: 0 1.1rem;
+  @apply font-black;
+}
+
+.warning {
+  @apply bg-yellow-100 border-l-4 p-4 border-yellow-500 italic text-yellow-700;
+
+  p {
+    margin: 0 !important;
+  }
+}
+
+@tailwind utilities;
