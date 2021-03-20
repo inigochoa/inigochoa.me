@@ -51,7 +51,7 @@
     "lint": "npm-run-all --parallel lint:* --print-label",
     "lint:js": "eslint lib src",
     "lint:md": "markdownlint-cli2 '**/*.md' '#node_modules'",
-    "prod": "npm-run-all clean lint prod:* --print-label",
+    "prod": "npm-run-all clean prod:* --print-label",
     "prod:11ty": "NODE_ENV=production eleventy --quiet",
     "prod:twnd": "postcss src/_assets/css/tailwind.pcss -o _site/assets/css/style.css --env production"
   }
