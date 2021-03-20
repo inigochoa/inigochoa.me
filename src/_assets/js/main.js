@@ -8,7 +8,7 @@
 
   window.addEventListener('scroll', () => {
     (50 <= window.scrollY)
-      ? scrollTopButton.classList.remove('hidden')
-      : scrollTopButton.classList.add('hidden')
+      ? scrollTopButton.classList.remove('opacity-0')
+      : scrollTopButton.classList.add('opacity-0')
   })
 })(document)
