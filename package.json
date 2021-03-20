@@ -13,6 +13,7 @@
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@quasibit/eleventy-plugin-sitemap": "^2.0.4",
+    "@tailwindcss/jit": "^0.1.4",
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.5",
     "cssnano": "^4.1.10",
@@ -50,7 +51,7 @@
     "lint": "npm-run-all --parallel lint:* --print-label",
     "lint:js": "eslint lib src",
     "lint:md": "markdownlint-cli2 '**/*.md' '#node_modules'",
-    "prod": "npm-run-all clean lint --parallel prod:* --print-label",
+    "prod": "npm-run-all clean lint prod:* --print-label",
     "prod:11ty": "NODE_ENV=production eleventy --quiet",
     "prod:twnd": "postcss src/_assets/css/tailwind.pcss -o _site/assets/css/style.css --env production"
   }
