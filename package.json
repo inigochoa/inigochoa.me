@@ -25,9 +25,7 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^9.0.0",
-    "inline-source": "^7.2.0",
     "markdown-it": "^12.0.4",
-    "markdown-it-anchor": "^7.1.0",
     "markdown-it-container": "^3.0.0",
     "markdown-it-for-inline": "^0.1.1",
     "markdownlint-cli2": "^0.0.14",
@@ -38,7 +36,6 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.41.1",
     "rollup-plugin-terser": "^7.0.2",
-    "striptags": "^3.1.1",
     "tailwindcss": "^2.0.3",
     "tailwindcss-debug-screens": "^2.0.0"
   },
