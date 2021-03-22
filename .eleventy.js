@@ -49,12 +49,10 @@ module.exports = config => {
     typographer: true,
   }
   const markdownIt  = require('markdown-it')
-  const mdAnchor    = require('markdown-it-anchor')
   const mdContainer = require('markdown-it-container')
   const mdIterator  = require('markdown-it-for-inline')
 
   config.setLibrary('md', markdownIt(mdOptions)
-    .use(mdAnchor, { level: 1 })
     .use(mdContainer, 'warning')
     .use(mdIterator, 'url_new_win', 'link_open', (tokens, idx) => {
       const [attrName, href] = tokens[idx].attrs.find(attr => 'href' === attr[0])
