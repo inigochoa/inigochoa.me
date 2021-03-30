@@ -17,6 +17,7 @@
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.5",
     "cssnano": "^4.1.10",
+    "cypress": "^6.8.0",
     "eleventy-plugin-metagen": "^1.1.0",
     "eslint": "^7.22.0",
     "github-colors": "^2.2.19",
@@ -41,6 +42,8 @@
   },
   "scripts": {
     "clean": "rimraf _site",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
     "dev": "npm-run-all clean --parallel dev:* --print-label",
     "dev:11ty": "NODE_ENV=development eleventy --serve --quiet",
     "dev:twnd": "postcss src/_assets/css/tailwind.pcss -o _site/assets/css/style.css --watch",
