@@ -58,7 +58,6 @@ from Ikea.
 - Node.js
 - Eleventy
 - PHP 5 & 7
-- ASP.NET
 - Symfony 2, 3 & 4
 - Drupal 6, 7 & 8
 - Git
