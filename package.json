@@ -1,6 +1,6 @@
 {
   "name": "inigochoa.me",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "The personal site of Iñigo Ochoa.",
   "author": {
     "name": "Iñigo Ochoa",
@@ -37,6 +37,7 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.41.1",
     "rollup-plugin-terser": "^7.0.2",
+    "standard-version": "^9.2.0",
     "tailwindcss": "^2.0.3",
     "tailwindcss-debug-screens": "^2.0.0"
   },
@@ -53,6 +54,10 @@
     "lint:md": "markdownlint-cli2 '**/*.md' '#node_modules'",
     "prod": "npm-run-all clean prod:* --print-label",
     "prod:11ty": "NODE_ENV=production eleventy --quiet",
-    "prod:twnd": "postcss src/_assets/css/tailwind.pcss -o _site/assets/css/style.css --env production"
+    "prod:twnd": "postcss src/_assets/css/tailwind.pcss -o _site/assets/css/style.css --env production",
+    "rel": "standard-version",
+    "rel:minor": "standard-version --release-as minor",
+    "rel:patch": "standard-version --release-as patch",
+    "rel:major": "standard-version --release-as major"
   }
 }
