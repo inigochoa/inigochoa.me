@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/inigochoa/inigochoa.me/compare/v1.0.0...v2.0.0) (2021-04-08)
+
+
+### CI
+
+* fix pagespeed action generated git message ([d956be7](https://github.com/inigochoa/inigochoa.me/commit/d956be768638fc8752e773a2cdc3cd13d77318fb))
+
+
+### Documentation
+
+* update readme with better information ([46945b3](https://github.com/inigochoa/inigochoa.me/commit/46945b3b224c2b799ca567fa085115bc9fd845b7))
+
 ## [1.0.0](https://github.com/inigochoa/inigochoa.me/compare/v0.0.0...v1.0.0) (2021-04-08)
 
 
