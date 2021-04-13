@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/inigochoa/inigochoa.me/compare/v2.0.0...v2.1.0) (2021-04-13)
+
+
+### Features
+
+* add monitorbot-statuspage project ([07566f2](https://github.com/inigochoa/inigochoa.me/commit/07566f2a59252c3ddf3e21ad0cf48ab426e91ce0))
+
+
+### CI
+
+* remove pagespeed workflow ([dbbc549](https://github.com/inigochoa/inigochoa.me/commit/dbbc54979e966050f998227c9501773482a81342))
+
+
+### Documentation
+
+* fix typo in readme ([1f3ecbc](https://github.com/inigochoa/inigochoa.me/commit/1f3ecbc5cf0eee6f399071f840b93d8c4d99c794))
+
 ## [2.0.0](https://github.com/inigochoa/inigochoa.me/compare/v1.0.0...v2.0.0) (2021-04-08)
 
 
