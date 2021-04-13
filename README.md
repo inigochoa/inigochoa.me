@@ -57,7 +57,7 @@ yarn ling:md
 
 ### e2e
 
-e2e tests ensure the site continueas to work after changes are made.
+e2e tests ensure the site continues to work after changes are made.
 To run e2e tests type:
 
 ```console
