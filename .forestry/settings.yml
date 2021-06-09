@@ -7,9 +7,35 @@ sections:
 - type: document
   path: src/index.md
   label: Work
+
+- type: document
+  path: src/about.md
+  label: About
+
+- type: document
+  path: src/uses.md
+  label: Uses
+
+- type: document
+  path: src/privacy-policy.md
+  label: Privacy Policy
+
+- type: document
+  path: src/terms-and-conditions.md
+  label: Terms and Conditions
+
+- type: document
+  path: src/the-website.md
+  label: The Website
+
+- type: document
+  path: src/404.md
+  label: 404
+
 - type: document
   path: src/_data/projects.json
   label: Projects
+
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
