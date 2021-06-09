@@ -33,7 +33,7 @@ sections:
   label: 404
 
 - type: document
-  path: src/_data/projects.json
+  path: src/_data/projects.js
   label: Projects
 
 upload_dir: uploads
