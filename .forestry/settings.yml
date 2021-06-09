@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: ''
+  path: index.md
   label: Work
 upload_dir: uploads
 public_path: "/uploads"
