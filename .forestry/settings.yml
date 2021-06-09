@@ -2,15 +2,14 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
+- type: document
+  path: src/index.md
+  label: Work
 - type: document
   path: src/_data/projects.json
   label: Projects
-  match: "**/*"
-- type: document
-  path: index.md
-  label: Work
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
