@@ -33,6 +33,7 @@ module.exports = config => {
   })
 
   /* --- SHORTCODES --- */
+  config.addShortcode('currentYear', require('./lib/shortcodes/currentYear'))
   config.addShortcode('languageColor', require('./lib/shortcodes/languageColor'))
   config.addShortcode('version', require('./lib/shortcodes/version'))
 
