@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/inigochoa/inigochoa.me/compare/v2.1.0...v3.0.0) (2021-07-03)
+
+
+### Features
+
+* dynamic footer copyright year ([7c016d2](https://github.com/inigochoa/inigochoa.me/commit/7c016d2da6659f69264158795347f609fb207d7c))
+* github pages deploy workflow ([36812cd](https://github.com/inigochoa/inigochoa.me/commit/36812cd67a5ef01b6996529b260dce8a6976ba3c))
+
+
+### Bug Fixes
+
+* remove invalid alt attribute from svg ([aefe7d9](https://github.com/inigochoa/inigochoa.me/commit/aefe7d97bf7ee7daa697d0664b4fa5f4d28e49d3))
+
+
+### Chore
+
+* forestry sections fix ([b2afa6d](https://github.com/inigochoa/inigochoa.me/commit/b2afa6dce612ebad55760b5160c54a8bacb08a66))
+* forestry sections update ([cb38fad](https://github.com/inigochoa/inigochoa.me/commit/cb38fad18f9fd04fc7527ece2730c66008c22f21))
+* forestry sections update ([9e40cb5](https://github.com/inigochoa/inigochoa.me/commit/9e40cb5f60930f23ba378662f061a1a29a67de14))
+* remove forestry ([fb16e8d](https://github.com/inigochoa/inigochoa.me/commit/fb16e8db95d8bf83d7c929c6c400251c696efe85))
+
+
+### Build System
+
+* **deps:** bump browserslist from 4.16.3 to 4.16.6 ([e4a175b](https://github.com/inigochoa/inigochoa.me/commit/e4a175b7c1b40cf8708a84f4d3f1783b925e147d))
+* **deps:** bump hosted-git-info from 2.8.8 to 2.8.9 ([d0a6557](https://github.com/inigochoa/inigochoa.me/commit/d0a6557958562bf97d9581f7c5a8fbf78af9f96c))
+* **deps:** bump ws from 7.4.4 to 7.4.6 ([3d0d341](https://github.com/inigochoa/inigochoa.me/commit/3d0d341404b07a452b53b8ae6dcd01fc80888263))
+* **deps-dev:** bump postcss from 8.2.8 to 8.2.10 ([246d700](https://github.com/inigochoa/inigochoa.me/commit/246d700853678b0b97251a53a873e9d82ba1cc11))
+
 ## [2.1.0](https://github.com/inigochoa/inigochoa.me/compare/v2.0.0...v2.1.0) (2021-04-13)
 
 
