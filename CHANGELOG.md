@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/inigochoa/inigochoa.me/compare/v3.0.0...v3.0.1) (2021-07-03)
+
+
+### Bug Fixes
+
+* deploy branch name changed to main ([2f75fb3](https://github.com/inigochoa/inigochoa.me/commit/2f75fb3e21a9712fee315f7b52c7f75d05e9bfd2))
+
 ## [3.0.0](https://github.com/inigochoa/inigochoa.me/compare/v2.1.0...v3.0.0) (2021-07-03)
 
 
