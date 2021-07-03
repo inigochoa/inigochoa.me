@@ -1,0 +1,12 @@
+
+/* TEAM */
+	Chef: Iñigo Ochoa
+	Contact: contact [at] inigochoa.me
+	Twitter: @inigochoa
+	From: Vitoria-Gasteiz, Basque Country, Spain
+
+/* SITE */
+	Last update: 2021/07/03
+	Language: English
+	Doctype: HTML5
+	IDE: VSCode

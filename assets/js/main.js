@@ -1,0 +1,1 @@
+!function(o){const t=o.getElementById('scrollTopButton');0!==t.length&&(t.addEventListener('click',(()=>window.scroll({behavior:'smooth',top:0}))),window.addEventListener('scroll',(()=>{50<=window.scrollY?t.classList.remove('opacity-0'):t.classList.add('opacity-0')})))}(document);
