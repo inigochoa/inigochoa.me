@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/inigochoa/inigochoa.me/compare/v3.0.1...v3.1.0) (2021-07-07)
+
+
+### Features
+
+* update website info with new hosting ([d1d98ee](https://github.com/inigochoa/inigochoa.me/commit/d1d98ee91aafb83379f05a9a10531ff8906167a0))
+
+
+### CI
+
+* generate CNAME along with the site ([afd6ee1](https://github.com/inigochoa/inigochoa.me/commit/afd6ee12e8e6855d60709c9847201657822297ef))
+
+
+### Styling
+
+* added dark mode on media ([e835ed8](https://github.com/inigochoa/inigochoa.me/commit/e835ed85f53506d2decbcb216b42bed07f14e3e4))
+* added new light colors set ([cb01e62](https://github.com/inigochoa/inigochoa.me/commit/cb01e62b5d7efdff007ad1c903e73fea028f75b1))
+* fix some mobile issues ([66a1389](https://github.com/inigochoa/inigochoa.me/commit/66a138962228b55c15e06e337e9e88b202070d12))
+* updated active link to extra bold ([253ece2](https://github.com/inigochoa/inigochoa.me/commit/253ece2bead136fa2cdc9984910e987fc0a0f4ce))
+
 ### [3.0.1](https://github.com/inigochoa/inigochoa.me/compare/v3.0.0...v3.0.1) (2021-07-03)
 
 
