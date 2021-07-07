@@ -23,9 +23,6 @@ module.exports = config => {
   config.addFilter('dateymd', dateformat.ymd)
   config.addFilter('year', dateformat.year)
 
-  /* --- PASSTHROUGH COPY */
-  config.addPassthroughCopy('CNAME')
-
   /* --- PLUGINS --- */
   config.addPlugin(require('eleventy-plugin-metagen'))
   config.addPlugin(require('@11ty/eleventy-navigation'))
