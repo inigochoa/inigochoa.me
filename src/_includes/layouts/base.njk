@@ -36,14 +36,14 @@
       type="image/png"
     />
   </head>
-  <body class="bg-light-background debug-screens flex flex-col min-h-screen">
+  <body class="bg-light-background debug-screens flex flex-col min-h-screen dark:bg-dark-background dark:text-dark-primary">
     {% include 'partials/_header.njk' %}
 
-    <main class="{% block mainclasses %}bg-light-content{% endblock %} flex-grow max-w-md mx-auto p-4 w-full sm:p-6 md:max-w-xl md:rounded-xl lg:max-w-3xl xl:max-w-5xl">
+    <main class="{% block mainclasses %}bg-light-content dark:bg-dark-content{% endblock %} flex-grow max-w-md mx-auto p-4 w-full sm:p-6 md:max-w-xl md:rounded-xl lg:max-w-3xl xl:max-w-5xl">
       {% include 'partials/_page_date.njk' %}
 
       {% block content %}
-        <section class="max-w-none min-w-full prose lg:prose-lg xl:prose-xl">
+        <section class="max-w-none min-w-full prose lg:prose-lg xl:prose-xl dark:prose-dark">
           {{ content|safe }}
         </section>
       {% endblock %}
