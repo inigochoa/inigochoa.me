@@ -19,7 +19,9 @@ screens are most common.
 
 The design is intended to be as clear as possible to avoid loading unwanted
 content. [inigochoa.me] is a static site with zero server-side resource
-consumption and it's hosted on DigitalOcean 100% renewable energy servers.
+consumption and it's hosted on GitHub Pages 100% renewable energy servers. You 
+can read more information about the carbon footprint left by this website at 
+[Website Carbon Calculator].
 
 [inigochoa.me]: https://inigochoa.me/
 [Low Tech Magazine]: https://solar.lowtechmagazine.com/
