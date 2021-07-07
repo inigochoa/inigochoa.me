@@ -5,13 +5,22 @@ module.exports = {
       safelist: [],
     },
   },
-  darkMode: false,
+  darkMode: 'media',
   theme: {
     debugScreens: {
       position: ['left', 'top'],
     },
     extend: {
       colors: {
+        dark: {
+          arrow: '#9ca3af',
+          background: '#0d1219',
+          card: '#191e25',
+          content: '#1a2634',
+          primary: '#f9fafa',
+          secondary: '#dde0e2',
+          tertiary: '#c2c6ca',
+        },
         garnet: 'rgba(255, 0, 0, 0.6)',
         light: {
           arrow: '#9ca3af',
@@ -88,12 +97,46 @@ module.exports = {
             },
           ],
         },
+
+        dark: {
+          css: {
+            color: theme('colors.dark.secondary'),
+            'h1': {
+              color: theme('colors.dark.primary'),
+            },
+            'h2': {
+              color: theme('colors.dark.primary'),
+            },
+            'h3': {
+              color: theme('colors.dark.primary'),
+            },
+            'h4': {
+              color: theme('colors.dark.primary'),
+            },
+            'h5': {
+              color: theme('colors.dark.primary'),
+            },
+            'h6': {
+              color: theme('colors.dark.primary'),
+            },
+            a: {
+              color: theme('colors.dark.secondary'),
+            },
+            code: {
+              color: theme('colors.dark.primary'),
+            },
+            strong: {
+              color: theme('colors.dark.primary'),
+            },
+          },
+        },
       }),
     },
   },
   variants: {
     extend: {
       padding: ['even', 'odd'],
+      typography: ['dark'],
     },
   },
   plugins: [
