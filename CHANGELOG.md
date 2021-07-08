@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.1.1](https://github.com/inigochoa/inigochoa.me/compare/v3.1.0...v3.1.1) (2021-07-08)
+
+
+### Styling
+
+* fix duplicate adjacent link to home ([0f81b69](https://github.com/inigochoa/inigochoa.me/commit/0f81b69cf3dd54ca20084d1eae59ecdf5ea668e9))
+
 ## [3.1.0](https://github.com/inigochoa/inigochoa.me/compare/v3.0.1...v3.1.0) (2021-07-07)
 
 
