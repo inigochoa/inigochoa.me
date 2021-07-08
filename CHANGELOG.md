@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.2.1](https://github.com/inigochoa/inigochoa.me/compare/v3.1.1...v3.2.1) (2021-07-08)
+
+
+### Bug Fixes
+
+* merge issues ([ebe3b6f](https://github.com/inigochoa/inigochoa.me/commit/ebe3b6f21da3e348666a036236581c674d52166e))
+
+## [3.2.0](https://github.com/inigochoa/inigochoa.me/compare/v3.1.0...v3.2.0) (2021-07-08)
+
+
+### Features
+
+* new svg favicon ([45005dd](https://github.com/inigochoa/inigochoa.me/commit/45005dd09d2732afba95bc2ad9aa1cd75a4a1c77))
+
+
+### Chore
+
+* **release:** 3.2.0 ([99108b8](https://github.com/inigochoa/inigochoa.me/commit/99108b8bcef6e159202001304333bbf5721f580e))
+
 ## [3.2.0](https://github.com/inigochoa/inigochoa.me/compare/v3.1.0...v3.2.0) (2021-07-08)
 
 
