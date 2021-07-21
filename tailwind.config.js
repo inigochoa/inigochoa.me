@@ -14,22 +14,18 @@ module.exports = {
       colors: {
         dark: {
           arrow: '#9ca3af',
-          background: '#0d1219',
-          card: '#191e25',
-          content: '#1a2634',
+          background: '#1a2533',
+          card: '#223244',
           primary: '#f9fafa',
           secondary: '#dde0e2',
-          tertiary: '#c2c6ca',
         },
-        garnet: 'rgba(255, 0, 0, 0.6)',
+        garnet: 'rgba(255, 0, 0, 0.65)',
         light: {
           arrow: '#9ca3af',
           background: '#f3f4f6',
           card: '#ffffff',
-          content: '#ffffff',
           primary: '#000000',
           secondary: '#374151',
-          tertiary: '#6b7280',
         },
       },
       typography: theme => ({

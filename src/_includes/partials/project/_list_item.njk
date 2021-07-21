@@ -7,7 +7,7 @@
       target="_blank"
     >{{ project.name }}</a></h2>
     <p class="flex-grow leading-7 mb-4 text-light-secondary text-lg md:leading-7 md:mb6 md:text-xl dark:text-dark-secondary">{{ project.desc }}</p>
-    <ul class="flex flex-wrap leading-7 text-light-tertiary text-sm md:leading-7 dark:text-dark-tertiary">
+    <ul class="flex flex-wrap leading-7 text-light-secondary text-sm md:leading-7 dark:text-dark-secondary">
       {% for language in project.lang|sort %}
         <li class="language mr-3" style="{% languageColor language %}">{{ language }}</li>
       {% endfor %}
