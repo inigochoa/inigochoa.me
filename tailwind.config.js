@@ -28,6 +28,9 @@ module.exports = {
           secondary: '#374151',
         },
       },
+      outline: {
+        garnet: ['2px dashed rgba(255, 0, 0, 0.65)', '.5rem']
+      },
       typography: theme => ({
         DEFAULT: {
           css: [
