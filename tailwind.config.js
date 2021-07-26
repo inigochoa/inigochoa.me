@@ -134,12 +134,15 @@ module.exports = {
   },
   variants: {
     extend: {
+      backgroundColor: ['selection'],
       padding: ['even', 'odd'],
+      textColor: ['selection'],
       typography: ['dark'],
     },
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('tailwindcss-selection-variant'),
     ...process.env.NODE_ENV === 'development'
       ? [require('tailwindcss-debug-screens')]
       : [],
