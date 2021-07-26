@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.5.0](https://github.com/inigochoa/inigochoa.me/compare/v3.4.0...v3.5.0) (2021-07-26)
+
 ## [3.4.0](https://github.com/inigochoa/inigochoa.me/compare/v3.3.0...v3.4.0) (2021-07-26)
 
 
