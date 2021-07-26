@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.4.0](https://github.com/inigochoa/inigochoa.me/compare/v3.3.0...v3.4.0) (2021-07-26)
+
+
+### Styling
+
+* added focus outline ([b5f9581](https://github.com/inigochoa/inigochoa.me/commit/b5f9581adb8b59345e11126cffacea6994f4aa0b))
+* added selection styles ([77c4685](https://github.com/inigochoa/inigochoa.me/commit/77c4685082d5e50cf6680231b80d708cfb44ecfc))
+
 ## [3.3.0](https://github.com/inigochoa/inigochoa.me/compare/v3.2.1...v3.3.0) (2021-07-21)
 
 
