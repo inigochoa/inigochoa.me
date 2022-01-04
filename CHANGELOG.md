@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.6.0](https://github.com/inigochoa/inigochoa.me/compare/v3.5.0...v3.6.0) (2022-01-04)
+
+
+### Build System
+
+* **deps:** bump path-parse from 1.0.6 to 1.0.7 ([6dbfb00](https://github.com/inigochoa/inigochoa.me/commit/6dbfb00dcc93c18d362cd73d7f1ed9b8a3b6c780))
+
+
+### Chore
+
+* updated caniuse ([b323ec0](https://github.com/inigochoa/inigochoa.me/commit/b323ec0d50db1196a60881dde633f7b9876e4bab))
+* updated yarn dependencies ([fd05819](https://github.com/inigochoa/inigochoa.me/commit/fd05819d0dcbc3ecf22604e21830e13c1b81a9ed))
+
 ## [3.5.0](https://github.com/inigochoa/inigochoa.me/compare/v3.4.0...v3.5.0) (2021-07-26)
 
 ## [3.4.0](https://github.com/inigochoa/inigochoa.me/compare/v3.3.0...v3.4.0) (2021-07-26)
