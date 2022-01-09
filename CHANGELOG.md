@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.7.0](https://github.com/inigochoa/inigochoa.me/compare/v3.6.0...v3.7.0) (2022-01-09)
+
+
+### Chore
+
+* updated to tailwind 3 ([1fa8c3b](https://github.com/inigochoa/inigochoa.me/commit/1fa8c3bcfff8047d8c1aa470dae754a809704a79))
+
+
+### Build System
+
+* added waiting to dev process ([ee86509](https://github.com/inigochoa/inigochoa.me/commit/ee8650990c0ee4ba4bfad3d2b4c500cd768c70e4))
+
+
+### Styling
+
+* added link focus styles ([db2bdd6](https://github.com/inigochoa/inigochoa.me/commit/db2bdd6e0bafbc5cbcb130e59805c508f414ac27))
+* removed light theme ([8c262c6](https://github.com/inigochoa/inigochoa.me/commit/8c262c606e840c2504b968c98e523fb29ae5d9fd))
+* updated tailwind config to version 3 ([ace82cc](https://github.com/inigochoa/inigochoa.me/commit/ace82cc1eb222a57e50ae0b8f6f6d4174000b859))
+
 ## [3.6.0](https://github.com/inigochoa/inigochoa.me/compare/v3.5.0...v3.6.0) (2022-01-04)
 
 
