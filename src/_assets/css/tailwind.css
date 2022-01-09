@@ -3,7 +3,7 @@
 @tailwind components;
 
 :focus-visible {
-  @apply outline-garnet;
+  @apply outline-dashed outline-2 outline-offset-4 outline-garnet;
 }
 
 a:active,
