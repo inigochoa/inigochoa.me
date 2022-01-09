@@ -1,11 +1,7 @@
 module.exports = {
   mode: 'jit',
-  content: {
-    content: ['_site/**/*.html'],
-    options: {
-      safelist: [],
-    },
-  },
+  content: ['_site/**/*.html'],
+  safelist: [],
   theme: {
     debugScreens: {
       position: ['left', 'top'],
