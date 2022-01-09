@@ -6,20 +6,16 @@
   @apply outline-garnet;
 }
 
-a {
-  &:active,
-  &:focus,
-  &:hover {
-    @apply text-garnet !important;
-  }
+a:active,
+a:focus,
+a:hover {
+  @apply text-garnet !important;
 }
 
-.language {
-  &::before {
-    background-color: var(--lang-color);
-    content: '';
-    @apply h-3 inline-block mr-2 rounded-full w-3;
-  }
+.language::before {
+  background-color: var(--lang-color);
+  content: '';
+  @apply h-3 inline-block mr-2 rounded-full w-3;
 }
 
 .nav-links li + li::before {
@@ -30,10 +26,10 @@ a {
 
 .warning {
   @apply bg-yellow-100 border-l-4 p-4 border-yellow-500 italic text-yellow-700;
+}
 
-  p {
-    margin: 0 !important;
-  }
+.warning p {
+  margin: 0 !important;
 }
 
 @tailwind utilities;

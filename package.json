@@ -15,8 +15,6 @@
     "@quasibit/eleventy-plugin-sitemap": "^2.1.4",
     "@tailwindcss/jit": "^0.1.18",
     "@tailwindcss/typography": "^0.5.0",
-    "autoprefixer": "^10.4.1",
-    "cssnano": "^5.0.14",
     "cypress": "^9.2.0",
     "eleventy-plugin-metagen": "^1.5.2",
     "eslint": "^8.6.0",
@@ -31,9 +29,6 @@
     "markdown-it-for-inline": "^0.1.1",
     "markdownlint-cli2": "^0.3.2",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.5",
-    "postcss-cli": "^9.1.0",
-    "postcss-nested": "^5.0.6",
     "rimraf": "^3.0.2",
     "rollup": "^2.63.0",
     "rollup-plugin-terser": "^7.0.2",
@@ -48,20 +43,17 @@
     "cy:run": "cypress run",
     "dev": "npm-run-all clean --parallel dev:* --print-label",
     "dev:11ty": "NODE_ENV=development eleventy --serve --quiet",
-    "dev:twnd": "postcss src/_assets/css/tailwind.pcss -o _site/assets/css/style.css --watch",
+    "dev:twnd": "npx tailwindcss -i src/_assets/css/tailwind.css -o _site/assets/css/style.css --watch",
     "git:authors": "echo '# Authors\n' > AUTHORS.md && git log --raw | grep '^Author: ' | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' >> AUTHORS.md",
     "lint": "npm-run-all --parallel lint:* --print-label",
     "lint:js": "eslint lib src",
     "lint:md": "markdownlint-cli2 '**/*.md' '#node_modules'",
     "prod": "npm-run-all clean prod:* --print-label",
     "prod:11ty": "NODE_ENV=production eleventy --quiet",
-    "prod:twnd": "postcss src/_assets/css/tailwind.pcss -o _site/assets/css/style.css --env production",
+    "prod:twnd": "npx tailwindcss -i src/_assets/css/tailwind.css -o _site/assets/css/style.css --minify",
     "rel": "standard-version",
     "rel:minor": "standard-version --release-as minor",
     "rel:patch": "standard-version --release-as patch",
     "rel:major": "standard-version --release-as major"
-  },
-  "dependencies": {
-    "postcss-include": "^0.3.1"
   }
 }

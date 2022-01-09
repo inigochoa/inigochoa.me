@@ -1,11 +1,11 @@
 module.exports = {
-  purge: {
+  mode: 'jit',
+  content: {
     content: ['_site/**/*.html'],
     options: {
       safelist: [],
     },
   },
-  darkMode: 'media',
   theme: {
     debugScreens: {
       position: ['left', 'top'],
@@ -130,14 +130,6 @@ module.exports = {
           },
         },
       }),
-    },
-  },
-  variants: {
-    extend: {
-      backgroundColor: ['selection'],
-      padding: ['even', 'odd'],
-      textColor: ['selection'],
-      typography: ['dark'],
     },
   },
   plugins: [
