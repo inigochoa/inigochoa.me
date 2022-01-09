@@ -12,21 +12,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        dark: {
-          arrow: '#9ca3af',
-          background: '#1a2533',
-          card: '#223244',
-          primary: '#f9fafa',
-          secondary: '#dde0e2',
-        },
+        arrow: '#9ca3af',
+        background: '#1a2533',
+        card: '#223244',
         garnet: 'rgba(255, 0, 0, 0.65)',
-        light: {
-          arrow: '#9ca3af',
-          background: '#f3f4f6',
-          card: '#ffffff',
-          primary: '#000000',
-          secondary: '#374151',
-        },
+        primary: '#fafafa',
+        secondary: '#cacaca',
       },
       outline: {
         garnet: ['2px dashed rgba(255, 0, 0, 0.65)', '.5rem']
@@ -35,33 +26,33 @@ module.exports = {
         DEFAULT: {
           css: [
             {
-              color: theme('colors.light.secondary'),
+              color: theme('colors.secondary'),
               'h1': {
-                color: theme('colors.light.primary'),
+                color: theme('colors.primary'),
               },
               'h2': {
-                color: theme('colors.light.primary'),
+                color: theme('colors.primary'),
               },
               'h3': {
-                color: theme('colors.light.primary'),
+                color: theme('colors.primary'),
               },
               'h4': {
-                color: theme('colors.light.primary'),
+                color: theme('colors.primary'),
               },
               'h5': {
-                color: theme('colors.light.primary'),
+                color: theme('colors.primary'),
               },
               'h6': {
-                color: theme('colors.light.primary'),
+                color: theme('colors.primary'),
               },
               a: {
-                color: theme('colors.light.secondary'),
+                color: theme('colors.secondary'),
               },
               code: {
-                color: theme('colors.light.primary'),
+                color: theme('colors.primary'),
               },
               strong: {
-                color: theme('colors.light.primary'),
+                color: theme('colors.primary'),
               },
               'h1::before': {
                 color: theme('colors.garnet'),
@@ -95,39 +86,6 @@ module.exports = {
               },
             },
           ],
-        },
-
-        dark: {
-          css: {
-            color: theme('colors.dark.secondary'),
-            'h1': {
-              color: theme('colors.dark.primary'),
-            },
-            'h2': {
-              color: theme('colors.dark.primary'),
-            },
-            'h3': {
-              color: theme('colors.dark.primary'),
-            },
-            'h4': {
-              color: theme('colors.dark.primary'),
-            },
-            'h5': {
-              color: theme('colors.dark.primary'),
-            },
-            'h6': {
-              color: theme('colors.dark.primary'),
-            },
-            a: {
-              color: theme('colors.dark.secondary'),
-            },
-            code: {
-              color: theme('colors.dark.primary'),
-            },
-            strong: {
-              color: theme('colors.dark.primary'),
-            },
-          },
         },
       }),
     },
