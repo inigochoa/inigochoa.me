@@ -6,7 +6,7 @@
 	From: Vitoria-Gasteiz, Basque Country, Spain
 
 /* SITE */
-	Last update: 2022/01/09
+	Last update: 2022/01/17
 	Language: English
 	Doctype: HTML5
 	IDE: VSCode
