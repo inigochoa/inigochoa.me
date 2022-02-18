@@ -26,7 +26,7 @@ module.exports = [
   {
     desc: 'My NPM business card. Just type npx inigochoa. Original idea from @bitandbang',
     lang: ['JavaScript'],
-    link: 'https://github.com/inigochoa/inigochoa-npm',
-    name: 'inigochoa-npm',
+    link: 'https://github.com/inigochoa/card',
+    name: 'card',
   },
 ]
