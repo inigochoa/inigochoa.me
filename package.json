@@ -24,7 +24,7 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^9.0.0",
-    "markdown-it": "^12.3.0",
+    "markdown-it": "^12.3.2",
     "markdown-it-container": "^3.0.0",
     "markdown-it-for-inline": "^0.1.1",
     "markdownlint-cli2": "^0.3.2",
