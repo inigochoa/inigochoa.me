@@ -25,6 +25,6 @@ and basketball. I've been teaching basketball to the kids at the school where I
 studied for +9 years.
 
 You can always find my contact information on my [NPM card] by running
-`npx inigochoa` in a console.
+`npx @inigochoa/card` in a console.
 
-[NPM card]: https://github.com/inigochoa/inigochoa-npm
+[NPM card]: https://github.com/inigochoa/card
