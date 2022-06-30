@@ -10,7 +10,7 @@
   "repository": "https://github.com/inigochoa/inigochoa.me",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-navigation": "^0.3.3",
     "@quasibit/eleventy-plugin-sitemap": "^2.1.5",
     "@tailwindcss/jit": "^0.1.18",
