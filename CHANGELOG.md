@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.8.0](https://github.com/inigochoa/inigochoa.me/compare/v3.7.0...v3.8.0) (2022-06-30)
+
+
+### Features
+
+* added generator meta tag ([89fc5d6](https://github.com/inigochoa/inigochoa.me/commit/89fc5d6f8870dd83d77720f6bdc01f96cd38646c))
+* added microanalytics ([616fceb](https://github.com/inigochoa/inigochoa.me/commit/616fceb7873532403acd85a05b3f886948d2f4a0))
+* updated about page with new npm card info ([0496c6d](https://github.com/inigochoa/inigochoa.me/commit/0496c6d94ed560de76cfaa853ac4c00466e9ba71))
+* updated npm card ([b2d445d](https://github.com/inigochoa/inigochoa.me/commit/b2d445d6d184053a29e9a02e722486adbf6ebdfe))
+
+
+### Build System
+
+* **deps-dev:** bump markdown-it from 12.3.0 to 12.3.2 ([d4bbe8e](https://github.com/inigochoa/inigochoa.me/commit/d4bbe8ec3c3d36ff7daed9906ca2e9727a6fa019))
+* **deps:** bump follow-redirects from 1.14.6 to 1.14.7 ([322c79a](https://github.com/inigochoa/inigochoa.me/commit/322c79a309c77e322bf0cc967ad33bf65ec09580))
+* **deps:** bump nanoid from 3.1.30 to 3.2.0 ([d01b868](https://github.com/inigochoa/inigochoa.me/commit/d01b868e503398f9a54e75336dce93608afed844))
+
+
+### Chore
+
+* update 11ty dev dependency ([48b1b0f](https://github.com/inigochoa/inigochoa.me/commit/48b1b0f4e764a90d6d6bb0ad33ac8e72ea763125))
+* update 11ty-metagen dev dependency ([0206250](https://github.com/inigochoa/inigochoa.me/commit/02062501900c3306329b7de6c594374541184ef2))
+* update 11ty-navigation dev dependency ([3ce7269](https://github.com/inigochoa/inigochoa.me/commit/3ce7269bec656b07dc0e4ccc6d67a3655ec897c5))
+* update 11ty-sitemap and wait-on dev dependencies ([9695193](https://github.com/inigochoa/inigochoa.me/commit/96951938758c23c6a3be89b819f5e8d986826f29))
+* update standard-version dev dependency ([772bce3](https://github.com/inigochoa/inigochoa.me/commit/772bce3ef07d9417dd961c5614c9005cdb9efc21))
+* update tailwind typography dev dependency ([df78ee6](https://github.com/inigochoa/inigochoa.me/commit/df78ee6c8cc975084c6c4e31ec23202e56580996))
+
 ## [3.7.0](https://github.com/inigochoa/inigochoa.me/compare/v3.6.0...v3.7.0) (2022-01-09)
 
 
