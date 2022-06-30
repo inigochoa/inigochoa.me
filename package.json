@@ -12,7 +12,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.3.2",
-    "@quasibit/eleventy-plugin-sitemap": "^2.1.4",
+    "@quasibit/eleventy-plugin-sitemap": "^2.1.5",
     "@tailwindcss/jit": "^0.1.18",
     "@tailwindcss/typography": "^0.5.0",
     "cypress": "^9.2.0",
@@ -36,7 +36,7 @@
     "tailwindcss": "^3.0.9",
     "tailwindcss-debug-screens": "^2.2.1",
     "tailwindcss-selection-variant": "^0.1.0",
-    "wait-on": "^6.0.0"
+    "wait-on": "^6.0.1"
   },
   "scripts": {
     "clean": "rimraf _site",
