@@ -16,7 +16,7 @@
     "@tailwindcss/jit": "^0.1.18",
     "@tailwindcss/typography": "^0.5.0",
     "cypress": "^9.2.0",
-    "eleventy-plugin-metagen": "^1.5.2",
+    "eleventy-plugin-metagen": "^1.7.11",
     "eslint": "^8.6.0",
     "github-colors": "^2.2.20",
     "html-minifier": "^4.0.0",
