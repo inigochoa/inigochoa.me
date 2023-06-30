@@ -64,11 +64,12 @@ from Ikea.
 - Android & iOS
 - Ionic Framework
 - MySQL & PostgreSQL
+- Astro
 
 ### Others
 
 - Telegram bots
-- Ubuntu 14, 16, 18 & 20
+- Ubuntu 14, 16, 18, 20 & 22
 
 ### Learning
 
