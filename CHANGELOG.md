@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.9.0](https://github.com/inigochoa/inigochoa.me/compare/v3.8.0...v3.9.0) (2023-06-30)
+
+
+### Features
+
+* add lock code challenge project ([ee4d9d5](https://github.com/inigochoa/inigochoa.me/commit/ee4d9d54623e06d4e0514005e3a813b38d816263))
+* update my bio ([5f0db00](https://github.com/inigochoa/inigochoa.me/commit/5f0db00730ce78f31da2bcbf8b9198c01d28bd90))
+* update my uses ([57a8bf0](https://github.com/inigochoa/inigochoa.me/commit/57a8bf02cfb44db22dbd6af067236eab6cd7fd27))
+
+
+### Build System
+
+* **deps:** bump follow-redirects from 1.14.7 to 1.15.1 ([2568e16](https://github.com/inigochoa/inigochoa.me/commit/2568e16d17fa095daac1d83f72558c4f7c5b12e1))
+* **deps:** bump minimist from 1.2.5 to 1.2.6 ([60f31c7](https://github.com/inigochoa/inigochoa.me/commit/60f31c79183aff93102b432998358131df7af0cb))
+
 ## [3.8.0](https://github.com/inigochoa/inigochoa.me/compare/v3.7.0...v3.8.0) (2022-06-30)
 
 
