@@ -22,7 +22,7 @@ always try to keep up to date with the new frameworks that come out.
 
 Personally, I like listening to music and podcasts, watching series and movies,
 and basketball. I've been teaching basketball to the kids at the school where I
-studied for +9 years.
+studied for +11 years.
 
 You can always find my contact information on my [NPM card] by running
 `npx @inigochoa/card` in a console.
