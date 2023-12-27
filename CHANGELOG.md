@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.10.0](https://github.com/inigochoa/inigochoa.me/compare/v3.9.0...v3.10.0) (2023-12-27)
+
+
+### Features
+
+* add new scroll watch ([ffd3d27](https://github.com/inigochoa/inigochoa.me/commit/ffd3d277a87c3995486e6515af495429b1a8359c))
+
 ## [3.9.0](https://github.com/inigochoa/inigochoa.me/compare/v3.8.0...v3.9.0) (2023-06-30)
 
 
