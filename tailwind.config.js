@@ -11,12 +11,12 @@ module.exports = {
         arrow: '#9ca3af',
         background: '#1a2533',
         card: '#223244',
-        garnet: 'rgba(255, 0, 0, 0.65)',
+        garnet: '#af0d11',
         primary: '#fafafa',
         secondary: '#cacaca',
       },
       outline: {
-        garnet: ['2px dashed rgba(255, 0, 0, 0.65)', '.5rem']
+        garnet: ['2px dashed #af0d11', '.5rem']
       },
       typography: theme => ({
         DEFAULT: {

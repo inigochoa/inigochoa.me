@@ -12,6 +12,19 @@ a:hover {
   @apply text-garnet !important;
 }
 
+.scroll-watcher {
+  animation: scroll-watcher linear;
+  animation-timeline: scroll(y);
+  scale: 0 1;
+  @apply bg-garnet fixed h-1 origin-left top-0 w-full z-50 motion-reduce:animate-none;
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
+}
+
 .language::before {
   background-color: var(--lang-color);
   content: '';
