@@ -1,0 +1,26 @@
+---
+layout: ../layouts/BaseLayout.astro
+title: Proyectos Open Source
+description: Colección de proyectos open source en PHP, TypeScript y JavaScript.
+  Herramientas, librerías y experimentos de desarrollo web.
+quote:
+  author: Linus Torvalds
+  quote: Hablar es barato. Muéstrame el código.
+schemas: ['projects']
+---
+
+import ProjectList from '@/components/ProjectList.astro'
+import { projects } from '@/data/projects'
+
+# Proyectos
+
+Aquí están los proyectos personales en los que he trabajado a lo largo del
+tiempo. Algunos siguen activos, otros son experimentos interesantes. Todos me
+enseñaron algo.
+
+<ProjectList projects={projects} />
+
+La mayoría están en [github.com/inigochoa]. Si te resulta útil alguno o tienes
+ideas para mejorarlo, estaré encantado de escucharte.
+
+[github.com/inigochoa]: https://github.com/inigochoa

@@ -1,0 +1,93 @@
+---
+import type { Author } from '@/types/author'
+import type { RichLink } from '@/types/links'
+import { Icon } from 'astro-icon/components'
+import { t } from '@/i18n/utils'
+
+export interface Props {
+  author: Author
+  links: RichLink[]
+}
+
+const { author, links } = Astro.props
+
+const currentPath = Astro.url.pathname === '/'
+  ? '/'
+  : Astro.url.pathname.replace(/\/$/, '')
+---
+
+<header
+  class="bg-carbon-light lg:bg-transparent flex flex-col lg:h-screen items-center justify-center lowercase lg:max-w-60 mt-5 lg:mt-0 p-4 lg:p-0 rounded-lg lg:sticky text-balance text-center lg:text-left lg:top-0"
+>
+  <div class="flex flex-col gap-2 lg:px-2">
+    <a
+      class="header-name font-semibold mb-2 lg:mb-0 relative text-5xl lg:text-4xl text-center"
+      href="/"
+      title={t('header.index')}
+    >{author.name}</a>
+    <p class="font-light text-slate-muted">{author.description}</p>
+  </div>
+
+  <nav
+    aria-label="Main navigation"
+    class="border-t lg:border-t-0 border-slate-muted mt-3 lg:my-4 py-4 w-3/4 md:w-1/3 lg:w-full"
+  >
+    <ul class="flex lg:flex-col gap-3 lg:items-start justify-between text-slate-muted">
+      {links.map(item => {
+        const isActive = currentPath === item.href
+
+        return (
+          <li class="lg:w-full">
+            <a
+              aria-current={isActive ? 'page' : undefined}
+              class={`border-2 lg:border-0 lg:border-l-3 duration-200 ease-in-out group flex items-center gap-2 p-2 rounded-lg transition-all ${
+                isActive
+                  ? 'bg-carbon border-accent text-slate'
+                  : 'hover:bg-carbon border-transparent hover:text-slate'
+              }`}
+              href={item.href}
+              title={item.title}
+            >
+              <Icon
+                class="size-6"
+                name={item.icon}
+              />
+              <span class="hidden lg:block">{item.title}</span>
+              <span class="hidden lg:block ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-slate-muted!">{item.subtitle}</span>
+            </a>
+          </li>
+        )
+      })}
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .header-name::before,
+  .header-name::after {
+    color: var(--color-slate);
+    opacity: 0;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    user-select: none;
+  }
+
+  .header-name::before {
+    content: '{ ';
+    left: -1.25rem;
+    transform: translateX(-2rem);
+  }
+
+  .header-name::after {
+    content: ' }';
+    right: -1.365rem;
+    transform: translateX(1.5rem);
+  }
+
+  .header-name:hover::before,
+  .header-name:hover::after {
+    color: var(--color-accent);
+    opacity: 1;
+    transform: translateX(0);
+  }
+</style>

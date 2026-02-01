@@ -1,0 +1,58 @@
+---
+import type { Author } from '@/types/author'
+import type { BaseLink, RichLink } from '@/types/links'
+import { Icon } from 'astro-icon/components'
+import { t } from '@/i18n/utils'
+
+export interface Props {
+  author: Author
+  footerLinks: BaseLink[]
+  socialLinks: RichLink[]
+}
+
+const { author, footerLinks, socialLinks } = Astro.props
+
+const currentYear = new Date().getFullYear()
+---
+
+<footer class="flex flex-col gap-4 mt-12 text-slate-muted">
+  <div class="bg-carbon border border-slate-muted/60 flex justify-between p-2 rounded-lg">
+    <p class="font-medium p-2">{t('footer.contact')}</p>
+
+    <ul class="flex gap-2 items-center">
+      {socialLinks.map(link => (
+        <li>
+          <a
+            class="align-middle duration-200 flex p-2 hover:text-slate transition-all"
+            href={link.href}
+            rel="noopener noreferrer"
+            target="_blank"
+            title={link.title}
+          >
+            <Icon
+              class="size-6"
+              name={link.icon}
+            />
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <div class="flex font-light items-center justify-between gap-4 text-sm">
+    <p>{t('footer.copyright', { year: currentYear, name: author.name })}</p>
+
+    <nav aria-label={t('footer.navigation')}>
+      <ul class="flex gap-4">
+        {footerLinks.map(item => (
+          <li>
+            <a
+              class="hover:underline hover:text-slate"
+              href={item.href}
+            >{item.title}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</footer>

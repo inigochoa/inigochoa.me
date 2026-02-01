@@ -1,0 +1,54 @@
+---
+layout: ../layouts/BaseLayout.astro
+title: Desarrollador backend en Vitoria-Gasteiz
+description: Backend developer del País Vasco especializado en Symfony y
+  tecnologías web modernas. Apasionado por el código limpio y el desarrollo
+  sostenible.
+quote:
+  author: Andrés Montes
+  quote: La vida puede ser maravillosa
+schemas: ['site', 'page', 'person']
+---
+
+import ProjectList from '@/components/ProjectList.astro'
+import { featured } from '@/data/projects'
+
+# Hola, soy Iñigo
+
+Soy desarrollador backend en Vitoria-Gasteiz. Trabajo principalmente con Symfony
+creando APIs y aplicaciones web. Ahora mismo uso sobre todo PHP, TypeScript y
+JavaScript.
+
+Me gusta mantener las cosas simples, escribir código claro y hacer software que
+dure en el tiempo.
+
+También hago apps móviles híbridas y toco frontend cuando hace falta (Vue
+Astro, Tailwind).
+
+## Cómo suelo trabajar
+
+- Buscando claridad antes que magia
+- Evitando sobreingeniería
+- Pensando en mantenimiento
+- Priorizando impacto real
+
+También me importa el coste energético de lo que construyo.
+
+## Proyectos destacados
+
+<ProjectList projects={featured} />
+
+Puedes ver la lista completa en [proyectos].
+
+## Más allá del código
+
+Entreno baloncesto desde hace más de 15 años y casi siempre programo con música
+de fondo. Rock para activarme, bandas sonoras para concentrarme.
+
+Si quieres saber en qué ando ahora, mira [ahora].
+
+También puedes ver mi setup en [uses].
+
+[proyectos]: /proyectos
+[ahora]: /now
+[uses]: /uses

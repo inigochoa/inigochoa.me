@@ -1,0 +1,30 @@
+{
+  "name": "inigochoa.me",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --host",
+    "start": "astro dev --host",
+    "build": "astro check && astro build",
+    "preview": "astro preview --host",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.6",
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/sitemap": "^3.7.0",
+    "astro": "^5.17.1",
+    "astro-icon": "^1.1.5",
+    "astro-seo": "^0.8.4",
+    "rehype-external-links": "^3.0.0",
+    "schema-dts": "^1.1.5",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.18",
+    "github-colors": "^2.2.21",
+    "tailwindcss": "^4.1.18",
+    "tailwindcss-debug-screens": "^3.0.1"
+  }
+}

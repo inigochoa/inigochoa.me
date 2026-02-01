@@ -1,0 +1,21 @@
+---
+import type { Frontmatter } from '@/types/site'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+
+export interface Props {
+  frontmatter: Frontmatter
+}
+
+const { frontmatter } = Astro.props
+---
+
+<BaseLayout
+  classes="items-center"
+  frontmatter={frontmatter}
+>
+  <Fragment slot="header" />
+
+  <slot />
+
+  <Fragment slot="footer" />
+</BaseLayout>

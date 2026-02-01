@@ -1,0 +1,42 @@
+---
+import type { Project } from '@/types/project'
+import githubColors from 'github-colors'
+
+export interface Props {
+  projects: Project[]
+}
+
+const { projects } = Astro.props
+
+function getTechColor(tech: string): string {
+  return githubColors.get(tech)?.color || ''
+}
+---
+
+<ul class="flex flex-col gap-6 not-prose text-slate-muted">
+  {projects.map(project => (
+    <li class="bg-carbon border border-slate-muted/60 duration-200 rounded-lg hover:shadow-lg hover:shadow-slate-muted/60 hover:-translate-y-1 transition-all">
+      <a
+        class="bg-none! block p-4"
+        href={project.href}
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        <p class="mb-4 text-2xl md:text-4xl text-slate">{project.name}</p>
+        <p>{project.description}</p>
+
+        <ul class="flex gap-6 mt-4">
+          {project.stack.map(lang => (
+            <li class="flex gap-2 items-center text-sm">
+              <span
+                class="rounded-full size-2"
+                style={`background-color: ${getTechColor(lang)}; color: ${getTechColor(lang)};`}
+              ></span>
+              {lang}
+            </li>
+          ))}
+        </ul>
+      </a>
+    </li>
+  ))}
+</ul>

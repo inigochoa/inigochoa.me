@@ -1,0 +1,102 @@
+---
+import '@/styles/global.css'
+
+import type { Author } from '@/types/author'
+import type { BaseLink } from '@/types/links'
+import type { Frontmatter, Site } from '@/types/site'
+import type { Project } from '@/types/project'
+import { Font } from 'astro:assets'
+import { ClientRouter } from 'astro:transitions'
+import { SEO } from 'astro-seo'
+import { aboutSchema, collectionSchema, pageSchema, personSchema, privacySchema, siteSchema, softwareSchema } from '@/lib/schema';
+
+export interface Props {
+  author: Author
+  frontmatter: Frontmatter
+  projects: Project[]
+  site: Site
+  socialLinks: BaseLink[]
+}
+
+const { author, frontmatter, projects, site, socialLinks } = Astro.props
+
+const canonicalURL = new URL(Astro.url.pathname, site.url)
+const pageDescription = frontmatter.description || ''
+
+const schemaMap: Record<string, () => any> = {
+  about: () => aboutSchema(frontmatter, canonicalURL.href, site),
+  page: () => pageSchema(frontmatter, canonicalURL.href, site),
+  person: () => personSchema(author, site, socialLinks),
+  privacy: () => privacySchema(frontmatter, canonicalURL.href, site),
+  projects: () => {
+    const items = projects.map(project => softwareSchema(author, project))
+    return collectionSchema(frontmatter, canonicalURL.href, site, items)
+  },
+  site: () => siteSchema(author, site),
+  tunes: () => collectionSchema(frontmatter, canonicalURL.href, site),
+}
+
+const schemas = frontmatter.schemas?.map(type => schemaMap[type]?.()) || []
+---
+
+<SEO
+  canonical={canonicalURL.href}
+  charset='UTF-8'
+  description={pageDescription}
+  title={frontmatter.title}
+  titleTemplate={site.title}
+  extend={{
+    link: [
+      { rel: 'author', href: '/humans.txt' },
+      { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
+      { rel: 'sitemap', href: '/sitemap-index.xml' },
+    ],
+    meta: [
+      { name: 'author', content: author.name },
+      { name: 'generator', content: Astro.generator },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0, viewport-fit=cover' },
+    ],
+  }}
+  openGraph={{
+    basic: {
+      image: `${site.url}/og-image.png`,
+      title: frontmatter.title,
+      type: 'website',
+      url: canonicalURL.href,
+    },
+    image: {
+      height: 800,
+      width: 1600,
+    },
+    optional: {
+      description: pageDescription,
+      locale: `${site.lang}`,
+      siteName: site.name,
+    },
+  }}
+  twitter={{
+    card: 'summary',
+    creator: author.handle,
+    description: pageDescription,
+    title: frontmatter.title,
+  }}
+/>
+
+<Font
+  cssVariable="--font-sans"
+  preload
+/>
+<Font
+  cssVariable="--font-mono"
+  preload
+/>
+
+{schemas.map(schema => (
+  <script
+    is:inline
+    set:html={JSON.stringify(schema)}
+    type="application/ld+json"
+  />
+))}
+
+<ClientRouter />

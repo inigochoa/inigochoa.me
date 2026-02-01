@@ -1,0 +1,65 @@
+---
+import type { Track } from '@/types/lastfm'
+import { formatDate } from '@/lib/dates'
+import { t } from '@/i18n/utils'
+
+export interface Props {
+  tracks: Track[]
+}
+
+const { tracks } = Astro.props
+const lastUpdate = formatDate(new Date())
+---
+
+<div class="bg-carbon border border-slate-muted/60 font-mono my-8 not-prose p-3 rounded-lg text-xs text-slate-muted">
+  <div class="border-b border-slate-muted/60 flex items-center justify-between mb-3 pb-2">
+    <div class="flex items-center gap-2 uppercase tracking-wider">
+      <span class="animate-pulse bg-accent rounded-full size-1.5"></span>
+      <span>{t('tunes.list')}</span>
+    </div>
+
+    <p>{t('tunes.updated_at', { date: lastUpdate })}</p>
+  </div>
+
+  <ol class="flex flex-col gap-0.5 max-h-110 pr-2 overflow-y-scroll scrollbar-thin">
+    {tracks.map((track, index) => (
+      <li class="block px-2 py-1.5 border border-transparent hover:border-slate-muted/60 hover:bg-carbon-light rounded-lg transition-all">
+        <div class="flex items-center gap-3">
+          <span class="shrink-0 tabular-nums w-6">{String(index + 1).padStart(2, '0')}.</span>
+
+          <div class="flex-1 min-w-0">
+            <p class="font-semibold mb-0.5 text-slate text-sm truncate">{track.name}</p>
+
+            <div class="flex items-center gap-2">
+              <span class="truncate">{track.artist}</span>
+            </div>
+          </div>
+        </div>
+      </li>
+    ))}
+  </ol>
+</div>
+
+<style>
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) #1f2937;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #1f2937;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #8a0a0d;
+  }
+</style>

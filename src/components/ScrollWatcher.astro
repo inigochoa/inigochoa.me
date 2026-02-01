@@ -1,0 +1,15 @@
+<div class="bg-accent fixed h-1 left-0 max-w-screen top-0 w-full z-50 motion-reduce:animate-none scroll-watcher"></div>
+
+<style>
+  div {
+    animation: scroll-watcher linear;
+    animation-timeline: scroll(y);
+    scale: 0 1;
+  }
+
+  @keyframes scroll-watcher {
+    to {
+      scale: 1 1;
+    }
+  }
+</style>

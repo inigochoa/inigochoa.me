@@ -1,0 +1,36 @@
+---
+layout: ../layouts/BaseLayout.astro
+title: Mi Música
+description: Las 100 canciones que más he escuchado. Entre rock para el día a
+  día y bandas sonoras para concentrarme.
+quote:
+  author: Avicii, The Nights
+  quote: Un día dejarás este mundo atrás, así que vive una vida que recordarás.
+schemas: ['tunes']
+---
+
+import TunesTable from '@/components/TunesTable.astro'
+import { getTopTracks } from '@/lib/lastfm'
+import { t } from '@/i18n/utils'
+
+export const tracks = await getTopTracks()
+
+# Tunes
+
+Escucho mucha música. Mientras programo, camino por la calle o hago cualquier
+otra cosa, siempre hay algo sonando de fondo.
+
+Lo que más me gusta es el **rock**, aunque a veces me inclino por la
+**electrónica**. Cuando necesito concentrarme de verdad, recurro a las **bandas
+sonoras**.
+
+## Top 100
+
+Estas son mis canciones más escuchadas, actualizadas automáticamente desde
+Spotify. Un reflejo bastante fiel de lo que suena en mis auriculares.
+
+{(0 < tracks.length) ? (
+  <TunesTable tracks={tracks} />
+) : (
+  <p class="italic text-slate-muted">{t('tunes.empty')}</p>
+)}

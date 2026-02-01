@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@plugin 'tailwindcss-debug-screens' {
+  position: 'top, left';
+};
+
+@theme {
+  /* Accent */
+  --color-accent: #af0d11;
+  --color-accent-dark: #8a0a0d;
+
+  /* Background */
+  --color-carbon: #151B23;
+  --color-carbon-light: #212830;
+
+  /* Text */
+  --color-slate: #f1f5f9;
+  --color-slate-muted: #94a3b8;
+}
+
+@utility prose-custom {
+  --tw-prose-body: var(--color-slate-muted);
+  --tw-prose-headings: var(--color-slate);
+  --tw-prose-lead: var(--color-slate);
+  --tw-prose-links: var(--color-accent);
+  --tw-prose-bold: var(--color-slate-muted);
+  --tw-prose-counters: var(--color-slate-muted);
+  --tw-prose-bullets: var(--color-slate-muted);
+  --tw-prose-hr: var(--color-slate-muted);
+  --tw-prose-quotes: var(--color-slate-muted);
+  --tw-prose-quote-borders: var(--color-accent);
+  --tw-prose-captions: var(--color-slate-muted);
+  --tw-prose-code: var(--color-slate);
+  --tw-prose-pre-code: var(--color-slate);
+  --tw-prose-pre-bg: var(--color-carbon-light);
+  --tw-prose-th-borders: var(--color-slate-muted);
+  --tw-prose-td-borders: var(--color-slate-muted);
+
+  @apply max-w-none;
+
+  a {
+    @apply bg-bottom-left bg-linear-to-r bg-no-repeat bg-size-[0%_2px] duration-300 from-accent no-underline to-accent transition-all;
+
+    &:hover {
+      @apply bg-size-[100%_2px];
+    }
+  }
+
+  code {
+    @apply after:content-none before:content-none bg-[#24292e] font-light mx-0.75 px-2 py-0.5 rounded-lg text-slate text-sm;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--tw-prose-headings);
+    @apply lowercase;
+
+    &::before {
+      content: '#';
+      @apply font-semibold mr-2 text-accent;
+    }
+  }
+
+  strong {
+    @apply font-extrabold;
+  }
+}
+
+body {
+  background: radial-gradient(
+    circle at center,
+    var(--color-carbon-light) 0%,
+    var(--color-carbon-light) 20%,
+    var(--color-carbon) 100%
+  );
+
+  @apply bg-fixed selection:bg-accent/60 flex flex-col lg:flex-row max-w-6xl min-h-screen lg:mx-auto px-5 lg:px-0 text-slate selection:text-slate;
+}

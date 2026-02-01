@@ -1,0 +1,47 @@
+---
+const { quote } = Astro.props
+---
+
+<hr />
+
+<blockquote
+  class="quote-animate opacity-0"
+  data-quote-component
+>
+  <p>{quote.quote}</p>
+  <footer class="not-italic">— {quote.author}</footer>
+</blockquote>
+
+<style>
+  blockquote {
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  blockquote.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    blockquote {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+</style>
+
+<script is:inline>
+  function init() {
+    const obs = new IntersectionObserver(
+      entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible')),
+      { threshold: 0.1 }
+    )
+
+    document.querySelectorAll('[data-quote-component]').forEach(q => obs.observe(q))
+  }
+
+  init()
+  document.addEventListener('astro:page-load', init)
+</script>

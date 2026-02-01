@@ -1,0 +1,21 @@
+# EditorConfig ayuda a mantener estilos de codificación consistentes
+# https://editorconfig.org
+
+root = true
+
+# Configuración general para todos los archivos
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Configuración específica para archivos Astro
+[*.astro]
+indent_size = 2
+
+# También podes agregar reglas para JavaScript, TypeScript, CSS, etc.
+[*.{js,jsx,ts,tsx,css,scss,html,md}]
+indent_size = 2
