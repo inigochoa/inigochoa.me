@@ -30,7 +30,7 @@ const currentPath = Astro.url.pathname === '/'
 
   <nav
     aria-label="Main navigation"
-    class="border-t lg:border-t-0 border-slate-muted mt-3 lg:my-4 py-4 w-3/4 md:w-1/3 lg:w-full"
+    class="border-t lg:border-t-0 border-slate-muted mt-3 lg:my-4 py-4 md:w-1/3 lg:w-full"
   >
     <ul class="flex lg:flex-col gap-3 lg:items-start justify-between text-slate-muted">
       {links.map(item => {
@@ -40,10 +40,10 @@ const currentPath = Astro.url.pathname === '/'
           <li class="lg:w-full">
             <a
               aria-current={isActive ? 'page' : undefined}
-              class={`border-2 lg:border-0 lg:border-l-3 duration-200 ease-in-out group flex items-center gap-2 p-2 rounded-lg transition-all ${
+              class={`border-2 lg:border-0 lg:border-l-3 duration-300 ease-in-out group flex items-center gap-2 p-2 rounded-lg transition-all ${
                 isActive
                   ? 'bg-carbon border-accent text-slate'
-                  : 'hover:bg-carbon border-transparent hover:text-slate'
+                  : 'hover:bg-carbon border-transparent hover:border-slate hover:text-slate'
               }`}
               href={item.href}
               title={item.title}

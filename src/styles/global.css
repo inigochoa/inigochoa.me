@@ -75,3 +75,35 @@ body {
 
   @apply bg-fixed selection:bg-accent/60 flex flex-col lg:flex-row max-w-6xl min-h-screen lg:mx-auto px-5 lg:px-0 text-slate selection:text-slate;
 }
+
+.card {
+  @apply bg-carbon border border-slate-muted/60 overflow-hidden relative rounded-lg;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  a {
+    @apply bg-none! block p-4;
+  }
+
+  &::before {
+    background: linear-gradient(90deg, var(--color-accent), transparent);
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+
+  &:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 10px 40px rgba(from var(--color-accent-dark) r g b / 0.3);
+    transform: translateY(-4px);
+
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+}

@@ -15,9 +15,8 @@ function getTechColor(tech: string): string {
 
 <ul class="flex flex-col gap-6 not-prose text-slate-muted">
   {projects.map(project => (
-    <li class="bg-carbon border border-slate-muted/60 duration-200 rounded-lg hover:shadow-lg hover:shadow-slate-muted/60 hover:-translate-y-1 transition-all">
+    <li class="card">
       <a
-        class="bg-none! block p-4"
         href={project.href}
         rel="noreferrer noopener"
         target="_blank"
