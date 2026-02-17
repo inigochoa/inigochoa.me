@@ -24,6 +24,8 @@ const currentYear = new Date().getFullYear()
         <li>
           <a
             class="align-middle duration-200 flex p-2 hover:rotate-6 hover:text-slate transition-all"
+            data-umami-event="social-click"
+            data-umami-event-platform={link.icon}
             href={link.href}
             rel="noopener noreferrer"
             target="_blank"

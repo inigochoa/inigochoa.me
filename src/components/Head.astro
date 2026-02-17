@@ -100,3 +100,10 @@ const schemas = frontmatter.schemas?.map(type => schemaMap[type]?.()) || []
 ))}
 
 <ClientRouter />
+
+<script
+  data-domains={site.name}
+  data-website-id={site.umami.id}
+  is:inline
+  src={`${site.umami.url}script.js`}
+></script>

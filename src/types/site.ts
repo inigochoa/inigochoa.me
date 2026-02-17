@@ -15,5 +15,9 @@ export interface Site {
   locale: string
   name: string
   title: string
+  umami: {
+    id: string
+    url: string
+  }
   url: string
 }

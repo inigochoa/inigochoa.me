@@ -17,6 +17,8 @@ function getTechColor(tech: string): string {
   {projects.map(project => (
     <li class="card">
       <a
+        data-umami-event="project-click"
+        data-umami-event-name={project.name}
         href={project.href}
         rel="noreferrer noopener"
         target="_blank"

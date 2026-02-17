@@ -17,5 +17,9 @@ export const site: Site = {
   locale: 'es_ES',
   name: 'inigochoa.me',
   title: '%s - Iñigo Ochoa',
+  umami: {
+    id: '82fae479-802b-4a00-bc94-5147453c4c32',
+    url: 'https://a.inigochoa.me/'
+  },
   url: 'https://inigochoa.me',
 }
